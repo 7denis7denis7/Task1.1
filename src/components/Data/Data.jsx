@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import './Data.css';
 
 const DataClass = styled.div`
     font-size: 12px;
@@ -13,9 +12,14 @@ const DataClass = styled.div`
 
 export default function Name(props) {
     const {dateLastMessage} = props;
+
+    const year = dateLastMessage.substring(0,4);
+    const month = dateLastMessage.substring(4,6);
+    const day = dateLastMessage.substring(6,8);
+
     return (
         <DataClass>
-            {dateLastMessage}
+            {day}/{month}/{year}
         </DataClass>
     )
 }

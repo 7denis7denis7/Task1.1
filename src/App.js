@@ -23,26 +23,26 @@ const users = [
   {
     name: 'Pavel Durov',
     message: 'Telegram is a freeware, cross-platform, cloud-based instant messaging service.',
-    date: '01.01.2022',
+    date: '20050809T183142',
     avatarUrl: 'Pavel.jpeg',
     online: true,
-    key: 1
+    id: 1
   },
   {
     name: 'Mark Zuckerberg',
     message: 'Facebook is the largest social network in the world',
-    date: '01.01.2022',
+    date: '20050809T183142',
     avatarUrl: 'Mark.jpeg',
     online: false,
-    key: 2
+    id: 2
   },
   {
     name: 'Elon Musk',
     message: 'Check my new Tesla 🏎️;',
-    date: '01.01.2022',
+    date: '20050809T183142',
     avatarUrl: 'Elon.jpeg',
     online: true,
-    key: 3
+    id: 3
   }
 ]
 
@@ -51,7 +51,7 @@ function App() {
     <>
       {users.map(item=>{
         return(
-          <Dialog key={item.key}>
+          <Dialog key={item.id}>
             <Avatar userPhoto={item.avatarUrl} online={item.online} alternativeText={item.name} />
               <div>
                 <Name userName={item.name} />
