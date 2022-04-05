@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Message.css';
 import styled from 'styled-components';
 
 const MessageClass = styled.div`
@@ -19,8 +18,5 @@ export default function Message(props) {
         <MessageClass>
             {userLastMessage}
         </MessageClass>
-        // <div className="message">
-        //     {userLastMessage}
-        // </div>
     )
 }
